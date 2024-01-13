@@ -12,3 +12,8 @@ extern "C" {
     }
 }
 ```
+
+
+Usage: host payload on webserver, edit line 30 w/URL.
+
+Weaponize & go!
