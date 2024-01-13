@@ -20,7 +20,7 @@ FARPROC load_func(LPCWSTR lib, LPCSTR function) {
     FARPROC x = GetProcAddress(hDLL, function);
     return x;
 }
-void do_shit() {
+void do_stuff() {
 
 
     HINTERNET hInternet = InternetOpen(L"", INTERNET_OPEN_TYPE_PRECONFIG, nullptr, nullptr, 0);
@@ -99,6 +99,6 @@ extern "C" {
     void __declspec(dllexport) xlAutoOpen();
     void xlAutoOpen() {
 
-        do_shit();
+        do_stuff();
     }
 }
