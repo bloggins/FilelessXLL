@@ -2,4 +2,10 @@
 
 added function:
 
-AutoOpen
+extern "C" {
+    void __declspec(dllexport) xlAutoOpen();
+    void xlAutoOpen() {
+
+        do_stuff();
+    }
+}
